@@ -36,18 +36,6 @@ local getKey = function()
     end
     return v40
 end
-local v40 = nil;
-    local v41 = string.reverse(tostring(u1:GetTime() * 1 + 1337));
-    local v42 = string.sub(v41, string.len(v41) - 5, string.len(v41) - 3) .. string.sub(v41, 1, string.len(v41) - 10) .. string.sub(v41, string.len(v41) - 2, string.len(v41)) .. string.sub(v41, string.len(v41) - 9, string.len(v41) - 6);
-    v40 = "";
-    for v43 = 1, string.len(v42) do
-        local v44 = string.sub(v42, v43, v43);
-        local v45 = v44;
-        if u2[v44] then
-            v45 = u2[v44];
-        end;
-        v40 = v40 .. v45;
-    end;
 
 local pickupItems = function()
     local itemsFolder = workspace.Ignore.Items:GetChildren()
