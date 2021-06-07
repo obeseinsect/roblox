@@ -59,8 +59,8 @@ local damageClosest = function()
         end
     end
     if target then
-    game:GetService("ReplicatedStorage").RE:FireServer('GiveDamage2', {
-        ["En"] = getKey(), ["AIs"] = {[1] = {["AI"] = target, ["Velocity"] = Vector3.new(), ["Special"] = "Headshot", Damage = 100}}}) 
+    game:GetService("ReplicatedStorage").RE:FireServer('GiveDamage2', 
+    {["AIs"] = {[1] = {["AI"] = target, ["Velocity"] = Vector3.new(), ["Special"] = "Headshot", ["Damage"] = 15}}})
     end
 end
 
